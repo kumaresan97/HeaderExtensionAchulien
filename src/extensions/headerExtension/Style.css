@@ -1,0 +1,49 @@
+/* #sp-appBar,
+.commandBarWrapper,
+[class^="sideActionsWrapper"] {
+  display: none !important;
+}
+[class^="actionsWrapper"] {
+  display: block !important;
+} */
+
+[data-custom-class="achulienadmin"] {
+  display: none !important;
+}
+
+/* .ms-HorizontalNavItems .is-selected {
+  border-bottom: 2px solid #1ea3dc !important;
+} */
+.ms-HorizontalNavItem-linkText,
+.ms-HorizontalNavItem-link {
+  /* color:#a98044 !important; */
+  font-weight: 500;
+}
+/* .ms-HorizontalNavItem .ms-HorizontalNavItem-link:hover {
+  color: #1ea3dc !important;
+} */
+[class^="mainHeader"] [class^="logoImg"] {
+  max-width: 155px !important;
+  max-height: 60px !important;
+}
+
+[data-custom-class="nonAdmin"] .ms-HorizontalNavItem-Edit {
+  display: none !important;
+}
+[data-automationid="HorizontalNav-edit"] {
+  align-items: center !important;
+}
+
+#HorizontalNav0EditLink:hover {
+  text-decoration: none !important;
+}
+.ms-HorizontalNavItem-alignSelf {
+  align-self: unset !important;
+  align-items: center !important;
+}
+/* [data-custom-class="nonAdmin"]
+  [data-automationid="SiteHeader"]
+  [class^="actionsWrapper"],
+[data-custom-class="nonAdmin"] .ms-Nav-compositeLink[name="Edit"] {
+  display: none !important;
+} */

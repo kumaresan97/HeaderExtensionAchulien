@@ -1,0 +1,269 @@
+// .scrollContainer {
+//   height: 36px;
+//   align-items: center;
+//   display: flex;
+//   background-color: #510c76;
+//   overflow: hidden;
+// }
+
+// .scrollText {
+//   /* animation properties */
+//   color: aliceblue;
+//   text-wrap: nowrap;
+//   -moz-transform: translateX(100%);
+//   -webkit-transform: translateX(100%);
+//   transform: translateX(100%);
+//   -moz-animation: my-animation 25s linear infinite;
+//   -webkit-animation: my-animation 25s linear infinite;
+//   animation: my-animation 25s linear infinite;
+// }
+
+// .headerSection {
+//   display: flex;
+//   align-items: center;
+//   .logoContainer {
+//     padding: 16px;
+//   }
+//   .ButtonSection {
+//     display: flex;
+//     margin-left: 20px;
+//     height: 40px;
+//     button {
+//       margin-right: 1px;
+//       user-select: none;
+//       cursor: pointer;
+//       border: none;
+//       font-weight: 400;
+//       font-size: 18px;
+//       border-radius: 2px;
+//       height: 100%;
+//       padding: 0px 5px !important;
+//       .ms-Button-label {
+//         font-weight: 400 !important;
+//       }
+//     }
+//     .activeButton:hover,
+//     button:hover {
+//       color: #01595c;
+//       border-bottom: 2px solid #009fdf;
+//     }
+//     .activeButton {
+//       font-weight: 600;
+//       color: #001937;
+//       background-color: transparent;
+//       border-bottom: 2px solid #009fdf;
+//     }
+//     .inactiveButton {
+//       color: #606778;
+//       background-color: transparent;
+//     }
+//     .inactiveButton:hover {
+//       color: #606778;
+//       background-color: #efefef;
+//     }
+//   }
+// }
+
+// /* for Firefox */
+
+// @-moz-keyframes my-animation {
+//   from {
+//     -moz-transform: translateX(100%);
+//   }
+//   to {
+//     -moz-transform: translateX(-100%);
+//   }
+// }
+
+// /* for Chrome */
+
+// @-webkit-keyframes my-animation {
+//   from {
+//     -webkit-transform: translateX(100%);
+//   }
+//   to {
+//     -webkit-transform: translateX(-100%);
+//   }
+// }
+
+// @keyframes my-animation {
+//   from {
+//     -moz-transform: translateX(100%);
+//     -webkit-transform: translateX(100%);
+//     transform: translateX(100%);
+//   }
+//   to {
+//     -moz-transform: translateX(-100%);
+//     -webkit-transform: translateX(-100%);
+//     transform: translateX(-100%);
+//   }
+// }
+
+// // Animation
+// ._scrolling {
+//   position: relative;
+//   width: 100%;
+//   background-color: #24292e;
+//   height: 48px;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   align-items: center;
+//   display: flex;
+// }
+
+// ._scrolling div {
+//   z-index: 1;
+//   display: inline-block;
+//   color: aliceblue;
+//   width: 100%;
+//   animation: marquee 40s linear infinite;
+// }
+
+// pre {
+//   overflow: visible !important;
+//   color: #fff !important;
+//   font-size: 14px !important;
+//   font-weight: 500 !important;
+//   margin: 0 !important;
+//   white-space: nowrap !important;
+// }
+
+// @media (max-width: 620px) {
+//   pre {
+//     font-size: 14px !important;
+//   }
+//   ._scrolling {
+//     height: 30px !important;
+//   }
+//   ._scrolling label {
+//     height: 30px !important;
+//     width: 40px !important;
+//     i {
+//       font-size: 14px !important;
+//     }
+//   }
+// }
+
+//new
+
+.scrollContainer {
+  height: 36px;
+  align-items: center;
+  display: flex;
+  background-color: #510c76;
+  overflow: hidden;
+}
+
+.scrollText {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite;
+  color: aliceblue;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  padding: 16px;
+}
+
+.ButtonSection {
+  display: flex;
+  margin-left: 20px;
+  height: 40px;
+}
+
+// button {
+//   margin-right: 1px;
+//   user-select: none;
+//   cursor: pointer;
+//   border: none;
+//   font-weight: 400;
+//   font-size: 18px;
+//   border-radius: 2px;
+//   height: 100%;
+//   padding: 0px 5px !important;
+// }
+
+.ms-Button-label {
+  font-weight: 400 !important;
+}
+
+.activeButton:hover,
+button:hover {
+  color: #01595c;
+  border-bottom: 2px solid #009fdf;
+}
+
+.activeButton {
+  font-weight: 600;
+  color: #001937;
+  background-color: transparent;
+  border-bottom: 2px solid #009fdf;
+}
+
+.inactiveButton {
+  color: #606778;
+  background-color: transparent;
+}
+
+.inactiveButton:hover {
+  color: #606778;
+  background-color: #efefef;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+._scrolling {
+  position: relative;
+  width: 100%;
+  background-color: #24292e;
+  height: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+}
+
+._scrolling div {
+  z-index: 1;
+  display: inline-block;
+  color: aliceblue;
+  width: 100%;
+  animation: scrollText 30s linear infinite;
+}
+
+pre {
+  overflow: visible !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 620px) {
+  pre {
+    font-size: 14px !important;
+  }
+  ._scrolling {
+    height: 30px !important;
+  }
+  ._scrolling label {
+    height: 30px !important;
+    width: 40px !important;
+    i {
+      font-size: 14px !important;
+    }
+  }
+}

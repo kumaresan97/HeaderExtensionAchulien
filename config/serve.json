@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://achaulien.sharepoint.com/sites/aclhub/SitePages/CollabHome.aspx",
+
+      "customActions": {
+        "978adae1-08c5-4b82-a7be-93b354daa62c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "headerExtension": {
+      "pageUrl": "https://achaulien.sharepoint.com/sites/aclhub/SitePages/CollabHome.aspx",
+
+      "customActions": {
+        "978adae1-08c5-4b82-a7be-93b354daa62c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
